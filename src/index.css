@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.6);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(191, 149, 63, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(191, 149, 63, 0.6);
+}
+
+/* Metallic Gold Gradient & Border */
+.gold-gradient {
+  background: linear-gradient(135deg, #BF953F 0%, #FCF6BA 25%, #B38728 50%, #FBF5B7 75%, #AA771C 100%);
+}
+
+.gold-text-gradient {
+  background: linear-gradient(135deg, #BF953F 0%, #FCF6BA 30%, #B38728 70%, #FBF5B7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-glow {
+  box-shadow: 0 0 20px rgba(191, 149, 63, 0.25);
+}
+
+.gold-border-glow {
+  border-color: rgba(191, 149, 63, 0.3);
+  box-shadow: inset 0 0 10px rgba(191, 149, 63, 0.1), 0 0 15px rgba(191, 149, 63, 0.15);
+}
+
+/* Green Neon Floor Grid Effect */
+.grid-floor {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(16, 185, 129, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(16, 185, 129, 0.05) 1px, transparent 1px);
+  transform: perspective(500px) rotateX(60deg);
+  transform-origin: top;
+}
+
+/* Glowing Neon Borders and Effects */
+.glow-blue {
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.15);
+}
+
+.glow-indigo {
+  box-shadow: 0 0 15px rgba(99, 102, 241, 0.15);
+}
+
+.glow-green {
+  box-shadow: 0 0 15px rgba(16, 185, 129, 0.25);
+}
+
+.glow-red {
+  box-shadow: 0 0 15px rgba(239, 68, 68, 0.25);
+}
+
+.glow-amber {
+  box-shadow: 0 0 15px rgba(245, 158, 11, 0.15);
+}
+
+.animate-pulse-slow {
+  animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .6;
+  }
+}
+
+/* Custom Grid background for charts */
+.chart-grid {
+  background-image: linear-gradient(rgba(191, 149, 63, 0.03) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(191, 149, 63, 0.03) 1px, transparent 1px);
+  background-size: 24px 24px;
+}

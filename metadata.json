@@ -1,0 +1,6 @@
+{
+  "name": "Painel de Validação – Bot IA Forex",
+  "description": "Painel técnico temporário para validar a API do Bot IA Forex e a integração com OAuth Deriv.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
